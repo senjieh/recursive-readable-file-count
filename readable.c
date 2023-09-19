@@ -80,3 +80,16 @@ int readable(char* input_path) {
     // Return value
     return readable_file_count;
 }
+
+
+
+
+int main(int argc, char const *argv[])
+{
+    int count = readable(argv[1]);
+    if (count >= 0) {
+        printf("Number of readable files: %d\n", count);
+    }
+    return 0;
+}
+
